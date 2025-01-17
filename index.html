@@ -1,0 +1,17 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title> Text Sentiment Analysis</title>
+    </head>
+    <body>
+        <h1>Text Sentiment Analysis</h1>
+        {%if result%}
+           <p>{{ result }}</p> 
+        {% endif %}
+        <form method="post" action="/predict">
+            <label>Enter Text</label><br>
+            <input type="text" name="textt"><br><br>
+            <input type="submit" value="Predict"><br><br>
+        </form>
+    </body>
+</html>
